@@ -3,7 +3,46 @@ public class IntegerSumExample1 {
     public static void main(String[] args) {          
       int a = 65;  
         int b = 35;  
-        // It will return the sum of a and b.  
-        System.out.println("The sum of a and b is = " + Integer.sum(a, b));  
+ 
     }  
-}  
+}
+public int multiply(int a, int b){
+    int result = 0;
+
+    if (a < 0 && b < 0){
+        for (int i = a; i <= -1; i++)
+            result-=b;    
+    }
+    else if (a < 0){
+        for (int i = 1; i <= b; i++)
+            result+=a;
+    }
+    else if (b < 0){
+        for (int i = 1; i <= a; i++)
+            result+=b;
+    }
+    else {
+        for (int i = 1; i <= b; i++)
+            result+=a;    
+    }
+    return result;
+}
+public class JavaDivisionExample {
+ 
+    public static void main(String[] args) {
+ 
+        JavaDivisionExample javaDivisionExample = new JavaDivisionExample();
+ 
+        int intDiv = javaDivisionExample.integerDivision(5, 3);
+
+ 
+    }
+
+public static void main(String[] args){
+     System.out.println("Int Division: "+intDiv);
+    System.out.println(multiply(3,-13)); // -39
+           // It will return the sum of a and b.  
+    System.out.println("The sum of a and b is = " + Integer.sum(a, b));  
+}
+
+
